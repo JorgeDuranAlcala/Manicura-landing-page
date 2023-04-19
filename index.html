@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Hello, world!</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="" />
+	<link href="./css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<style>
+html {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	width: 100%;
+	min-height: 100vh;
+}
+
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+
+@keyframes fade-bottom {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-left {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-right {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.active.fade-bottom {
+  animation: fade-bottom 1s ease-in;
+}
+.active.fade-left {
+  animation: fade-left 1s ease-in;
+}
+.active.fade-right {
+  animation: fade-right 1s ease-in;
+}
+
+.m-h-100 {
+	min-height: 100vh;
+}
+
+.bg-cool {
+background: #0F2027;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+@media (max-width: 780px) {
+	.main-img {
+		display: none;
+	}
+}
+</style>
+	<div class="container px-4">
+		<div class="row p-4 bg-cool d-flex align-items-center justify-content-center reveal m-h-100">
+			<div class="col d-flex flex-column align-items-center justify-content-center ">
+				<div class="row">
+					<h1 class="text-light" style="font-size: 3.2rem !important;">Manicurista </h1>
+				</div>
+				<div class="row">
+					<p class="text-light" style="font-size: 1.2rem !important;" >✨Tus uñas son tu reflejo. Cuídalas bien✨</p>
+				</div>
+				<div class="row">
+					<a href="#servicios" class="btn bg-white text-dark">Empezar</a>
+				</div>
+			</div>
+			<div class="col">
+				<img class="rounded-circle main-img" width="400px" height="400px" src="assets/p4" />	
+			</div>
+		</div>
+		<div class="row p-4 align-center reveal fade-left" id="servicios">
+				<h3 class="d-flex align-items-center justify-content-center w-100 p-4">Nuestros servicios</h3>
+			<div class="card-deck">
+  <div class="card">
+    <img class="card-img-top" src="assets/p2" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Acrigel</h5>
+      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Someone famous in Source Title</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="assets/p3" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Dipping gel</h5>
+      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Someone famous in Source Title</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="assets/p5" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Resina</h5>
+      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Someone famous in Source Title</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="assets/p6" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Poly Gel</h5>
+      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Someone famous in Source Title</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+
+	</div>	
+		</div>
+		<h3 class="d-flex align-items-center justify-content-center w-100 p-4" >Precios</h3>
+		<div class="row p-4 align-center reveal  fade-right">
+	<div class="card-deck">
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">Acrigel</h5>
+			<h4>$5</h4>
+      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">Dipping gel</h5>
+			<h4>$5</h4>
+      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">Resina</h5>
+			<h4>$5</h4>
+
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">Poly gel</h5>
+			<h4>$5</h4>
+
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+</div>
+		<div class="row d-flex justify-content-center align-items-center w-100">
+			<div class="d-flex flex-column align-items-center justify-content-center w-100 p-4">
+				<h3>AGENDA TÚ CITA📲</h3>
+				<h4>Numero de contacto</h4>
+				<a href="telf:584168396915">0416-8396915</a>
+			</div>
+		</div>
+	</div>
+	</div>
+	<div class="container d-flex justify-content-center align-items-center reveal fade-top my-4">
+<div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="400px" id="gmap_canvas" src="https://maps.google.com/maps?q=lara, carora&t=&z=10&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://2yu.co">2yu</a><br><style>.mapouter{position:relative;text-align:right;height:100%;width:100%;}</style><a href="https://embedgooglemap.2yu.co/">html embed google map</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:100%;width:100%;}</style></div></div>
+	</div>
+	<footer class="row d-flex justify-content-center align-items-center w-100 p-4 bg-primary">	
+		<a href="https://www.instagram.com/guinelys_nails"/>
+			<img src="assets/insta.svg" width="200px" height="200px"/>
+		</a>
+	</footer>
+	<script>
+			function reveal() {
+				var reveals = document.querySelectorAll(".reveal");
+
+				for (var i = 0; i < reveals.length; i++) {
+					var windowHeight = window.innerHeight;
+					var elementTop = reveals[i].getBoundingClientRect().top;
+					var elementVisible = 150;
+
+					if (elementTop < windowHeight - elementVisible) {
+						reveals[i].classList.add("active");
+					} else {
+						reveals[i].classList.remove("active");
+					}
+				}
+			}
+
+			window.addEventListener("scroll", reveal);
+	</script>
+</body>
+</html>
